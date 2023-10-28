@@ -3,8 +3,9 @@
 	import Navbar from "../components/Navbar.svelte";
   </script>
   
-  <main class="container p-5 ">
+  <main class=" p-5">
     <Navbar />
     <slot />
+    
   </main>
  

@@ -8,7 +8,7 @@
 	];
 </script>
 
-<nav class="bg-gray-900 rounded-full p-4 w-full ">
+<nav class="bg-gray-900 rounded-full p-4 w-full">
 	<div class="flex justify-between items-center md:px-4">
 		<a href="/" class=" ">📚</a>
 		<ul class="flex">

@@ -1,9 +1,17 @@
+<script>
 
+export let title;
+export let level;
+export let tema;
+
+let levelCase= level == 'principiante' ? 'A1' : level == 'medio' ? 'B1' : 'C1';
+
+</script>
 <a href="/" >
 <article class="flex items-start space-x-6 p-6 hover:bg-black/20">
     <img src="./learn-human.png" alt="" width="60" height="88" class="flex-none rounded-md bg-slate-100" />
     <div class="min-w-0 relative flex-auto">
-      <h2 class="font-semibold text-slate-900 truncate pr-20">A Day at the Beach</h2>
+      <h2 class="font-semibold text-slate-900 truncate pr-20">{title}</h2>
       <dl class="mt-2 flex flex-wrap text-sm leading-6 font-medium">
         <div class="absolute top-0 right-0 flex items-center space-x-1">
           <dt class="text-sky-500">
@@ -20,11 +28,11 @@
         </div>
         <div class="ml-2">
           <dt class="sr-only">Nivel</dt>
-          <dd>Principiante</dd>
+          <dd>{level}</dd>
         </div>
         <div class="flex-none w-full mt-2 font-normal">
           <dt class="sr-only">Cast</dt>
-          <dd class="text-slate-400">Diversión</dd>
+          <dd class="text-slate-400">{tema}</dd>
         </div>
       </dl>
     </div>

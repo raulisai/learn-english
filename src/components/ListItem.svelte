@@ -3,11 +3,13 @@
 export let title;
 export let level;
 export let tema;
+export let id;
 
 let levelCase= level == 'principiante' ? 'A1' : level == 'medio' ? 'B1' : 'C1';
 
 </script>
-<a href="/" >
+
+<a href={"/speaking/"+id} >
 <article class="flex items-start space-x-6 p-6 hover:bg-black/20">
     <img src="./learn-human.png" alt="" width="60" height="88" class="flex-none rounded-md bg-slate-100" />
     <div class="min-w-0 relative flex-auto">
